@@ -1,0 +1,20 @@
+categories = {
+    "Baking Supplies": ['Corn Meal', 'Flour', 'Icing', 'Oil', 'Mixes','Sugar'],
+    'Beverages': ['Coffee', 'Juice', 'Seltzer', 'Soda','Tea', 'Water'],
+    'Baked Goods': ['Brownies', 'Cake', 'Cookies', 'Muffins', 'Pastry', 'Pie'],
+    'Bread': ['Bagels', 'Baguettes', 'Buns', 'Loaf Bread', 'Pita Bread', 'Tortillas'],
+    'Canned Goods': ['Beans', 'Fruit', 'Soup', 'Spaghetti Sauce', 'Tuna and Seafood', 'Vegetables'],
+    'Cleaners':['All Purpose', 'Carpet and Floor Cleaners', 'Detergent', 'Dishwashing', 'Glass Cleaner', 'Laundry'],
+    'Condiments and Sauce':['Honey', 'Hot Sauce', 'Jam', 'Jelly', 'Mustard', 'Ketchup'],
+    'Dry Packaged Goods':['Bouillon', 'Cereal','Coffee', 'Pasta', 'Rice', 'Tea'],
+    'Dairy': ['Butter', 'Cheese', 'Cultured Dairy', 'Eggs', 'Milk', 'Yogurt'],
+    'Frozen Foods': ['Ice Cream', 'Individual Meals', 'Popsicles', 'Produce', 'Seafood','Waffels'],
+    'Paper Goods':['Dishware', 'Facial Tissue','Napkins', 'Paper Towels', 'Stationery', 'Toilet Paper'],
+    'Personal Hygiene': [ 'Deodorant', 'Facial Cleanser', 'Nail Care', 'Oral Care', 'Shampoo', 'Soap'],
+    'Plastic Goods':['Bags', 'Containers','Dishware', 'Foils', 'Saran Wrap', 'Tupperware'],
+    'Meat and Deli':['Bacon', 'Beef', 'Chicken','Deli Meats', 'Ham', 'Turkey'],
+    'Produce':['Flowers', 'Fruits', 'Nuts', 'Oats', 'Root Vegetables', 'Vegetables', ],
+    'Seafood': ['Crustaceans', 'Fish', 'Molluscs', 'Roe', 'Shellfish', 'Whitefish'],
+    'Spices':['Dried Herbs', 'Dried Spices', 'Fresh Herbs', 'Rubs', 'Salts', 'Spice Blends'],
+    'Other':['Baby Items', 'Baking Utensils', 'Decorations', 'Party Favors','Pet Supplies', 'School Supplies']
+}

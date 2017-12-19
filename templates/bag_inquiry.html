@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Bag Inquiry
+{% endblock %}
+
+{% block main %}
+<h1>Did you bring your bags for this trip?</h1>
+    <form action="{{ url_for('bag_inquiry') }}" method="post">
+        <input type="submit" class="btn btn-default" name= "bag_status" value="Yes"></button>
+        <input type="submit" class="btn btn-default" name= "bag_status" value="No"></button>
+    </form>
+{% endblock %}
+

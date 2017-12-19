@@ -1,0 +1,103 @@
+
+	
+	Welcome to Litterbug! 
+	------------------------------
+
+	Litterbug is an interactive app for users to track their plastic bag usage per grocery trip. 
+	The program is designed to incentivize users to bring their own plastic bags to the grocery store and 
+	educate users on plastic usage. In return, for each number of bags a user saves, the user will receive 
+	bonus points, and for each number of bags used, points will be deducted from the users point balance. 
+	All users will begin with a point balance of 0. As bonus points accumulate, different levels can be reached 
+	within Litter Bug's rewards program and the user is eligable to win rewards!
+
+	Getting Started:
+	------------------------------
+
+	In ordered to begin exploring the app, be sure to download all files included in the final-project folder. 
+	This folder includes the following:
+	1) Folder: Static
+	Included: Sub-Folder: images (background_image.jpg), scripts.js and styles.css
+	2) Folder: Template
+	Included: All html templates
+	3) Main Folder: Final-Project
+	Included: Main Application (application.py), Categories Dicitionary (categories.py),  litterbug.db, Requirements (requirementstxt.txt)
+	** Please note the categories dictionary is for proof of concept. 
+	*In designing and implementing the application it became apparent, public apis for grocery store data were not easily accesible.
+
+	Logging on:
+	------------------------------
+
+	Once you have ensured all files have been downloaded, run flask and open the Web Server. 
+	As you are a new user, navigate to the Register tab on the navigation bar and create your own account. 
+	Once your account has been validated and you are able to log-in, you will be informed of your current points 
+	balance and the next rewards level you can achieve. As a new user, you will have 0 points.
+
+	The home page provides users with an overview of their rewards level, points balance, total bags saved, 
+	and total bags used. When the homepage loads, a random fact is generated in order to educate or remind 
+	the user on how they can do their part to help save plastic bags.
+
+	Features:
+	------------------------------
+
+	From the homepage, you are able to navigate to the following features.
+
+	New Grocery Cart:
+
+	In order to populate your cart history, begin by choosing the option "New Grocery Cart" in the navigation
+	bar. The page displayed is a heirarchy of different classificaitons and sub-groups of groceries one can 
+	choose from within this app. The first level for the grocery heirarchy is the classification found in the left 
+	most row. The second level of the heirarchy is the sub-group which appear in the table rows as buttons. 
+	Ideally, the grocery heirachy would be sourced from a public API and be more expansive and reprsentative of a
+	true grocery store. Unfortunately, there were many set backs trying to find and connect to public APIs for 
+	grocery data. Therefore, the data on display is primarily for proof of concept. 
+
+	In order to begin entering items into your cart, simply click on the classification and sub-group 
+	(i.e. Bread:Bagels or Dairy:Butter). You will be re-directed to a form where you are able to enter the
+	specific item and quantity purchased. The specific item field is a free text field where any value is 
+	accepted. As many items may have special characters or numeric portions of the item or brand name there is
+	no check to validate the data type in the form with the exception of a check for a null form. The qty field 
+	must contain a valid positive integer. When you have successfully entered your item, clicking enter will
+	add the item to your grocery cart at which point you will be redirected to your cart. If you would like to
+	continue entering items, repeat the entry process.
+
+	When you have completed entering all of your items, click the close cart button located at the top of the 
+	grocery cart page. At this point, you will be prompted and asked whether or not you provided your own bags
+	for the trip. Choose the appropriate answer. A summary of your transaction will be calculated and displayed.
+	The total weight of the groceries in your cart will be presented. The weight is calculated using the 
+	underlying food_inventory database. An average weight based on the classification and sub-group entered has
+	been used. As mentioned previously, it would be ideal to be able to calculate the exact weight per item, but
+	the database was created for proof of concept withint he app.
+
+	 The total weight of the transaction is then translated into a number of bags based on the total weight 
+	 divided by the average maximum weight a plastic bag can sustain. Based on your plastic bag usage, points
+	 will be awarded or detracted from your acount and a message will appear on the screen where the sentiment
+	 of the message is directly impacted by whether you saved or used bags. If you have saved bags, you will 
+	 be thanked and shown a fact about the fight against pollution. If you used, you will view a fact regarding 
+	 plastic bag usage and the negative impact the bags have on the enviornment. 
+
+	------------------------------
+
+	Cart History:
+
+	In order to be able to track all transactions entered, one can view their Cart History by clicking on the 
+	cart history tab in the navigation bar. The cart totals throughout history will be displayed along with 
+	the bag status associated to the particular transaction. If you would like to view all items purchased within
+	a single transaction, simply click on the cart number and it will route you to a page displaying all items
+	in the cart. To return to the cart history use the "Go Back Button".
+
+	------------------------------
+
+	Rewards Program:
+
+	A structure of the rewards program and levels has been provided for the user in the rewards program tab.
+	This is an opportunity for the user to understand the different point thresholds necessary to achieve in
+	order to move through the program and redeem rewards!
+
+	------------------------------
+
+	In order to return to the homepage, simply click on the LitterBug logo in the top left of the navigation
+	bar. It will alert you as to your current rewards status and the next rewards level you are close to 
+	achieving. Feel free to enter as many new carts as you desire with a range of number of items.
+
+	Enjoy!
+

@@ -1,0 +1,506 @@
+.container
+{
+    /* center contents */
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* colors for navbar */
+
+.navbar-default {
+    background-color: #1c1e22;
+    border-color: #1c1e22
+     background-repeat: no-repeat;;
+}
+
+.navbar-inner {
+  background-color: #1c1e22; 
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+.navbar-default .navbar-brand .blue
+{
+    color: #537fbe;
+}
+
+.navbar-default .navbar-brand .red
+{
+    color: #ea433b;
+}
+.navbar-default .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+.navbar-default .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+main td
+{
+    /* left-align tables' cells */
+    text-align: center;
+}
+
+/* Open Source Table Format: http://codepen.io/alassetter/pen/cyrfB */
+/* Custome Background Image */
+body {
+  background-image: url('images/backgroud_image.jpg');
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+div.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Custom Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:18px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:14px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+.table-disable-hover.table tbody tr:hover td {
+      background: #FFFFFF;
+      color: #666B85;
+      border-top: 1px solid #666B85;
+      border-bottom: 1px solid #666B85;
+}
+
+.table-disable-hover.table-striped tbody tr:hover td{
+    background: #FFFFFF
+    color: #666B85;
+    border-top: 1px solid #666B85;
+    border-bottom: 1px solid #666B85;
+}
+
+.table-disable-hover.table-striped tbody tr:nth-child(odd):hover td{
+    background: #EBEBEB;
+    color: #666B85;
+    border-top: 1px solid #666B85;
+    border-bottom: 1px solid #666B85;
+}
+
+.table-disable-hover2.table-striped tbody tr:last-child:hover td{
+    background-color: #FFF;
+    color: #666B85;
+    border-top: 1px solid #666B85;
+    border-bottom: 1px solid #666B85;
+}
+
+
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:5px;
+  text-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.noBorder {
+    border: 0px;
+    padding:0; 
+    margin:0;
+    border-collapse: collapse;
+}
+
+/* Customer Container */
+.round {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+.round2 {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+.floating-box {
+ background:rgba(28, 30, 34, 0.7);
+  text-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  color: #FFFFFF;
+  vertical-align: middle;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  width: 100%;
+  height: 80px; 
+  border:1px solid #C1C3D1;
+  border-bottom-left-radius:1px;
+  border-bottom-right-radius:1px;
+}
+
+.floating-box2 {
+  background:#EBEBEB;
+  padding:5px;
+  text-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:20px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  color: black;
+  vertical-align: middle;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  padding: 10px; 
+  width: 100%;
+  height: 80px; 
+  border:1px solid #9ea7af;
+  border-bottom-left-radius:1px;
+  border-bottom-right-radius:1px;
+}
+
+
+.floating-box3 {
+  background:rgba(28, 30, 34, 0.7);
+  text-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  color: #FFFFFF;
+  vertical-align: middle;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight:normal;
+  padding: 10px; 
+  width: 100%;
+  height: 80px; 
+  border:1px solid #C1C3D1;
+  border-bottom-left-radius:1px;
+  border-bottom-right-radius:1px;
+}
+
+
+.floating-box4 {
+  background:#EBEBEB;
+  text-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:20px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  color: black;
+  vertical-align: middle;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  width: 100%;
+  height: 80px; 
+  border:1px solid #9ea7af;
+  border-bottom-left-radius:1px;
+  border-bottom-right-radius:1px;
+}
+
+
+.floating-box5 {
+  background-color: #1C1E22;
+  text-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:26px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  color: #EBEBEB;
+  vertical-align: middle;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight:normal;
+  padding: 5px; 
+  width: 100%;
+  height: 40px; 
+  border:1px solid #C1C3D1;
+  border-bottom-left-radius:1px;
+  border-bottom-right-radius:1px;
+}
+
+
+
+.center.floating-box {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.center.floating-box2 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/*Let's make it appear when the page loads*/
+.overlay:target:before {
+    display: none;
+}
+.overlay:before {
+  content:"";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 9;
+}
+.overlay .popup {
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 35%;
+  padding: 25px;
+  margin: 70px auto;
+  z-index: 10;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.overlay:target .popup {
+    top: -100%;
+    left: -100%;
+}
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+  }
+  .overlay .popup{
+    width: 70%;
+    left: 15%;
+  }
+}
+
+#rcorners1 {
+  border-radius: 3px;
+  background: #1C1E22;
+  text-align:center;
+  vertical-align:middle;
+  display: inline-block;
+  font-size:20px;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+    color: #FFFFFF;
+  margin-top: 10px;
+  padding: 20px;
+  width: 500px;
+  height: 150px; 
+  border:1px solid #EBEBEB;
+  border-bottom-left-radius:1px;
+  border-bottom-right-radius:1px;
+}
+
+.error {
+    color:red;
+}

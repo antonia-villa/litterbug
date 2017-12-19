@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Grocery Item
+{% endblock %}
+
+{% block main %}
+<div>
+<div id = "rcorners1" style = "height:100%">
+<form class="form-horizontal" action="{{ url_for('grocery_entry') }}" method="post" style = "width:100%">
+  <div class="form-group">
+    <label class="col-sm-6 control-label">Classification</label>
+    <div class="col-sm-6">
+      <p><input class="form-control" name="classification" value="{{classification}}" type="text" readonly></p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-6 control-label">Sub-Group</label>
+    <div class="col-sm-6">
+      <p><input class="form-control" name="sub_group" value="{{sub_group}}" type="text" readonly></p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="item" class="col-sm-6 control-label">Specific Item</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name ="item" placeholder="Specific Item" type="text">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="qty" class="col-sm-6 control-label">Qty</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name ="qty" placeholder="Qty" type="text">
+    </div>
+  </div>
+  <div class="form-group">
+     <button class="btn btn-default" style= "background-color:lightblue" type="submit">Enter</button>
+    </div>
+</form>
+</div>
+
+{% endblock %}

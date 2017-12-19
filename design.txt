@@ -1,0 +1,90 @@
+
+	
+	Welcome to an indepth look at Litterbug! 
+	------------------------------------------
+	
+	Litterbug has a simple goal to track plastic bag usage and educate users. The features of the app
+	are based on data points collected from user input as well as dictionaries of facts and advise that
+	are provided to the user throughout their journey.
+	
+	Each of the following pages was intended to have the following uses and functionality.
+	
+	Log-on
+	----------------
+	The log-in screen is a simple form allowing users to enter the app with their specific username and password.
+	Users must have a registered account in order to enter the application or else the form will fail and 
+	render an error template.
+	
+	Register
+	----------------
+	The registration form is provided for new users to create unique accounts and use the app independently. The
+	registration form requests a username and password as well as password validation. All user names must be unique
+	and all passwords must pass the validation in order to pass the registration process and enter the app. 
+	
+	Homepage
+	----------------
+	The homepage is intended to be a landing page where a user can check their current status in the rewards
+	program. A pop-up box was implemented with dynamic content alerting the user of their proximity to the 
+	next level in the rewards program or congratulating the user on reaching the next level. The pop-up
+	box is a quick way to incentivize the user to reach the next rewards level. The top of the homepage displays 
+	the current users reward status followed directly below by all data points related to the rewards program.
+	Below the table containing the data points, you will see a container with a quick tip on how to help
+	save plastic which is randomly generated each time the page loads.
+	
+	New Grocery Cart:
+	----------------
+	The new grocery cart page is intended as a portal for users to enter each grocery transaction. The table is
+	set up in a grocery heirarchy which matches the database. Key value pairs build the table structure and 
+	are loaded from the categories.py dictionary. The classification is set as the key and the values are all of the
+	sub-groups that exist within the classification. Ideally (as mentioned multiple times), this data would
+	have been sourced through a public API. However, I built an equivalent structure to take the place of API data.
+	
+	When an item is clicked, an entry form is generated where the Classification and Sub-class of that item are 
+	static in the form. The user is then responsible for entering the specific item within that classification and sub-group.
+	If there was a large data-base being utilizied, the item field would be validated against the grocery heirarchy.
+	Once an item is entered, the user must enter the qty purchased of the particular item. 
+	
+	If the form passes the validation test where the item and qty field must not be blank and the qty must be an integer
+	value greater than 0, the user can succesfully click enter. The item will be added to the user's cart and the page will
+	re-direct to the grocery cart page.
+	
+	At this point, the user can repeat the process and continue to enter items into their cart or they have the 
+	option of closing the cart.
+	
+	Close Cart to Bag Inquiry	
+	--------------------------------
+	
+	When the cart is closed, an html form is rendered in order to collect data as to whether or not the user provided
+	their own bags for the transaction. This response is crucial in order to calculate the total number of bags saved
+	or used and calculate the points.
+	
+	Cart Total
+	--------------------------------
+	
+	The cart total page has a dual purpose of showing the statistic for the individual cart as well as generate
+	a random fact based on what type of transaction the user made. If the user saved bags, they will see a randomly
+	generated fact regarding plastic bags, but if the user used bags, they will receive a fact with a negative sentiment.
+	Rendering the totals page allows the users account status to be updated. From here they are able to return to the homepage
+	where their points balance will be up to date.
+	
+	Cart History
+	--------------------------------
+	
+	Cart history was designed as a simple bag which displays rolled up metrics for each cart within a user's profile.
+	The status of the bags within the cart are tracked as USED or SAVED in the bag status column. Additionally, functionality
+	has been implemented in order to be able to drill down into each individual cart and few the transactions within the cart.
+	In order to view all tranactions within a cart, one simple can click on the cart id number and a new html page
+	will be rendered in order to see all items purchased with the consistent ID.
+	
+	Rewards Levels
+	--------------------------------
+	
+	A basic template was rendered in order to display the rewards levels in the program as a reference.
+	
+	
+	The app was designed in a user friendly manner which allows the user the flexibility to view their transaction
+	history at all granularity. Through using the app, the hope is that a user will begin to understand the impact
+	plastic bags have on the enviornment.
+	
+	
+	

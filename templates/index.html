@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+
+
+{% block main %}
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2><font size="5">Keep Saving Bags!</font></h2>
+        <a class="close" href="#popup1">&times;</a>
+        <div class="content">
+            <b>You are {{point_difference}} POINTS</b> away from rewards level <b>{{next_reward_level}}</b>!
+        </div>
+    </div>
+</div>
+<br>
+<div class = "floating-box" style=" width: 100%; height: 100%">
+<font size="5.5" color="white">
+    Current Rewards Level:</font>
+</div>
+<div class = "floating-box3">
+    <font size="7"><b>{{level}}</b></font>
+</div>
+
+   
+<br>
+<br>
+   <table class="table table-striped table-disable-hover" data-classes="table">
+        <thead>
+            <tr>
+                <th class="text-center">Point Balance</th>
+                <th class="text-center">Total Bags Saved</th>
+                <th class="text-center">Total Bags Used</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{points}}</td>
+                    <td>{{total_saved}}</td>
+                    <td>{{total_used}}</td>
+                </tr>
+        </tbody>
+    </table>  
+    
+<div class="floating-box4" style="width: 100%; height: 100%">
+    <font size="5"><b>How can you make a difference?</b></font>
+</div>
+<div class="floating-box4" style="width: 100%; height: 100%">
+    <p>{{advise}}</p>
+</div>
+{% endblock %}

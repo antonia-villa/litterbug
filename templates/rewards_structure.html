@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rewards Structure
+{% endblock %}
+
+
+{% block main %}
+<div class="floating-box5" style=" width: 100%; height: 100%">
+    <p>Rewards Program</p>
+</div>
+<br>
+<br>
+<div class="table-responsive">
+   <table class="table table-striped table-disable-hover" style="width: 70%" align="center">
+        <thead  style="color:#2e944b">
+            <tr>
+                <th class="text-center">Reward Level</th>
+                <th class="text-center">Minimum Points</th>
+                <th class="text-center">Reward</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in rewards %}
+        <tr>
+                <td class="text-center">{{row.min_points}}</td>
+                <td class="text-center">{{row.level_name}}</td>
+                <td class="text-center">{{row.reward}}</td>	
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+        
+
+{% endblock %}

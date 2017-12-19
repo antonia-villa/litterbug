@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Grocery Cart Total
+{% endblock %}
+
+{% block main %}
+<div class="floating-box4" style="width:100%; height: 100%">
+    <p>
+        <font size = "5"><b>
+        Cart Total
+       </b></font>
+    </p>
+</div>
+<br>
+<br>
+   <table class="table table-striped table-disable-hover table-responsive" align="center">
+        <thead>
+            <tr>
+                <th class="text-center">Total Items</th>
+                <th class="text-center">Total Qty</th>
+                <th class="text-center">Total Weight</th>
+                <th class="text-center">Total Bags Saved</th>
+                <th class="text-center">Total Bags Used</th>
+                <th class="text-center">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td class="text-center">{{total_items}}</td>
+                    <td class="text-center">{{total_qty}}</td>
+                    <td class="text-center">{{total_weight}}</td>
+                    <td class="text-center">{{total_bags_saved}}</td>
+                    <td class="text-center">{{total_bags_used}}</td>
+                    <td class="text-center">{{total_points}}</td>
+                </tr>
+        </tbody>
+    </table>
+    
+<h2><font color = "#1b1e24">{{fact_text}}</font></h2>
+<div class = "floating-box3" style="width:100%; height: 100%">
+    <p>
+        <font size = "4.5">
+        {{fact}}
+        </font>
+    </p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cart Items
+{% endblock %}
+
+
+{% block main %}
+   <table class="table table-striped table-disable-hover" id="noBorder">
+        <thead>
+            <tr>
+                <th class="text-center">Classification</th>
+                <th class="text-center">Sub-group</th>
+                <th class="text-center">Item</th>
+                <th class="text-center">Weight</th>
+                <th class="text-center">Qty</th>
+                <th class="text-center">Total Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+        {% for row in items %}
+                <td class="text-center">{{row.classification}}</td>
+                <td class="text-center">{{row.sub_group}}</td>
+                <td class="text-center">{{row.item}}</td>
+                <td class="text-center">{{row.weight}}</td>	
+                <td class="text-center">{{row.qty}}</td>	
+                <td class="text-center">{{row.total_weight}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<div>
+    <button class="btn btn-default" onclick="goBack()">Go Back</button>
+    <h1 align="right">
+       <font size="4" color = "black">
+           Transaction Date: {{purchase_date}}
+        <font>
+    </h1>
+</div>
+{% endblock %}
